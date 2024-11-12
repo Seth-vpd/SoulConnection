@@ -1,0 +1,52 @@
+
+.carteCustomer {
+  height: 700px;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+.containerMeetPay {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 
+.pageTitle {
+  position: absolute;
+  justify-content: left;
+  align-items: start;
+  margin-bottom: 80px;
+  display: flex;
+  top: 10vh;
+  left: 17vw;
+  font-size: 2em;
+  width: 80vw;
+} */
+
+.pageTitle {
+  display: flex;
+  /* margin-bottom: 20px; Ajoute un espace sous le titre */
+  font-size: 2em;
+  /* Supprimez la position absolue si possible pour plus de contrôle */
+  /* position: absolute; */
+  justify-content: left;
+  align-items: start;
+  padding-left: 17vw; /* Utilisez un padding à la place */
+  width: 80vw;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    max-height: 200px;
+    width: 100%;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

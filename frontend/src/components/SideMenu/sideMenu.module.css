@@ -1,0 +1,219 @@
+/* .gridSidemenu {
+  width: 13vw;
+  min-width: 160px;
+  height: 100vh;
+  background-color: #007bFF;
+  display: grid;
+  grid-template-rows: 1fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.ongletMenu {
+  display: flex;
+  font-size: 1.3em;
+  justify-content: left;
+  align-items: center;
+  padding-left: 1.5em;
+  transition: margin-left 0.3s, background-color 0.3s;
+}
+
+.ongletMenu:hover {
+  background-color: rgba(11, 109, 220, 0.865);
+  color: white;
+  border-radius: 20px;
+}
+*/
+.ongletSelected {
+  background-color: #ffffff6b;
+  color: white;
+  display: flex;
+  transition: margin-left 0.3s, background-color 0.3s;
+}
+
+/*
+.darkMode {
+  height: 70px;
+  margin-bottom: 130px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.darkMode:hover {
+  background-color: black;
+  color: white;
+}
+
+.darkModeIcon {
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+
+.parameter {
+  height: 70px;
+  margin-top: 130px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.parameter:hover {
+  background-color: black;
+  color: white;
+}
+
+.deconnexion {
+  height: 70px;
+  cursor: pointer;
+  border-radius: 100px;
+  border-top: 0px;
+}
+
+
+.deconnexion:hover {
+  height: 70px;
+  cursor: pointer;
+  background-color: rgb(74, 0, 47);
+  color: white;
+}
+
+.icons {
+  margin-right: 10px;
+  font-size: 1.2em;
+} */
+
+/* Structure de base */
+/*.sideMenuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 15vw;
+  padding: 20px;
+  background-color: #333;
+}*/
+
+.sideMenuContainer {
+  grid-area: side;
+  background-color: #333;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sideMenuContainer ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sideMenuContainer ul li {
+  margin: 10px 0;
+  display: inline-block;
+  align-items: start;
+  padding: 10px;
+  width: 100%;
+  color: white;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  transition: margin-left 0.3s, background-color 0.3s;
+}
+
+.sideMenuContainer ul li:hover {
+  background-color: #ffffff6b;
+  color: black;
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px;
+  display: inline-flex;
+  width: 100%;
+  text-align: left;
+  align-items: center;
+}
+
+/* Boutons en bas */
+.darkMode {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.sideMenuContainer button svg {
+  margin-left: auto;
+  font-size: 1.3em;
+}
+
+/* Responsive: mobile */
+/*@media (max-width: 768px) {
+  .sideMenuContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .sideMenuContainer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sideMenuContainer ul li {
+    margin: 0 5px;
+    padding: 5px;
+  }
+
+  .sideMenuContainer button {
+    padding: 5px;
+  }
+}*/
+
+/*@media (min-width: 769px) and (max-width: 1024px) {
+  .sideMenuContainer {
+    display: none;
+  }
+}*/
+
+@media (min-width: 769px) {
+  .sideMenuContainer {
+    transform: translateX(0);
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  /*.sideMenuContainer {
+    display: none;
+  }*/
+  .sideMenuContainer {
+    transform: translateX(-100%);
+    position: absolute;
+    z-index: 1000;
+  }
+  .sideMenuContainer.open {
+    transform: translateX(0);
+  }
+}

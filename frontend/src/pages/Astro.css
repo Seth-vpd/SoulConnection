@@ -1,0 +1,31 @@
+.titlePage h1 {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.titlePage {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.3em;
+  margin-bottom: 1em;
+}
+
+.addEvent {
+    background-color: rgb(2, 54, 187);
+    border: none;
+    padding: 0 0.5em;
+    border-radius: 0.5em;
+    color: white;
+    font-weight: bold;
+}
+
+
+.addEvent:hover {
+    background-color: rgb(91, 131, 233);
+    border: none;
+    padding: 0 0.5em;
+    border-radius: 0.5em;
+    color: white;
+    font-weight: bold;
+}

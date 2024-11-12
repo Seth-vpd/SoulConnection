@@ -1,0 +1,8 @@
+{
+    "connectionString": "mongodb+srv://Soul:SoulConnection@souldb.kmu8i.mongodb.net/?retryWrites=true&w=majority&appName=SoulDB",
+    "apikey": "c5ed77d30cd35a68142c2680bd11cc57",
+    "PORT": 3000,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJqZWFubmUubWFydGluQHNvdWwtY29ubmVjdGlvbi5mciIsIm5hbWUiOiJKZWFubmUiLCJzdXJuYW1lIjoiTWFydGluIiwiZXhwIjoxNzI3MTg2OTM1fQ.iaqZIoe6KdN4xGNhuGexvcsU7JoW56JmCuQp07RX0A4",
+    "jwtSecret": "SoulHASHcode"
+
+}
